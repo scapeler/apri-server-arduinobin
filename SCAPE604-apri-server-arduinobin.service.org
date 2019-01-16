@@ -1,0 +1,9 @@
+[Unit]
+Desription=SCAPE604-apri-server-arduinobin - start or restart apri-server-arduinobin service, respawn
+After=network.target
+[Service]
+ExecStart=/opt/SCAPE604/apri-server-arduinobin/apri-server-arduinobin.sh /opt/SCAPE604/log/SCAPE604-apri-server-arduinobin.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
